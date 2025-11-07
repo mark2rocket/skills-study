@@ -1,10 +1,12 @@
 # Claude Skills - 워크플로우 자동화 가이드
 
-이 디렉토리에는 개발 워크플로우를 자동화하기 위한 Claude 스킬들이 포함되어 있습니다.
+이 디렉토리에는 개발 및 마케팅 워크플로우를 자동화하기 위한 Claude 스킬들이 포함되어 있습니다.
 
 ## 📚 스킬 목록
 
-### 1. 코드 리뷰 (`code-review.md`)
+### 🧑‍💻 개발자용 스킬
+
+#### 1. 코드 리뷰 (`code-review.md`)
 자동으로 코드 변경사항을 리뷰하고 피드백을 제공합니다.
 - 코드 품질 검사
 - 보안 취약점 탐지
@@ -13,7 +15,7 @@
 
 **사용법:** `/code-review` 또는 `/code-review [파일경로]`
 
-### 2. 테스트 자동 실행 (`test-runner.md`)
+#### 2. 테스트 자동 실행 (`test-runner.md`)
 프로젝트의 테스트를 실행하고 결과를 분석합니다.
 - 자동 테스트 실행
 - 실패 원인 분석
@@ -21,7 +23,7 @@
 
 **사용법:** `/test-runner` 또는 `/test-runner --fix`
 
-### 3. 릴리스 노트 생성 (`release-notes.md`)
+#### 3. 릴리스 노트 생성 (`release-notes.md`)
 Git 커밋 히스토리를 분석하여 릴리스 노트를 자동 생성합니다.
 - 커밋 분류 (기능, 버그 수정, 문서 등)
 - 마크다운 형식 출력
@@ -29,7 +31,7 @@ Git 커밋 히스토리를 분석하여 릴리스 노트를 자동 생성합니�
 
 **사용법:** `/release-notes` 또는 `/release-notes v1.0.0..v2.0.0`
 
-### 4. 문서 자동 생성 (`docs-generator.md`)
+#### 4. 문서 자동 생성 (`docs-generator.md`)
 코드베이스를 분석하여 자동으로 문서를 생성합니다.
 - API 문서
 - 컴포넌트 문서
@@ -37,7 +39,7 @@ Git 커밋 히스토리를 분석하여 릴리스 노트를 자동 생성합니�
 
 **사용법:** `/docs-generator` 또는 `/docs-generator --type api`
 
-### 5. 이슈 처리 (`issue-handler.md`)
+#### 5. 이슈 처리 (`issue-handler.md`)
 GitHub 이슈를 분석하고 자동으로 처리합니다.
 - 버그 재현 및 분석
 - 기능 요청 구현 계획
@@ -45,13 +47,71 @@ GitHub 이슈를 분석하고 자동으로 처리합니다.
 
 **사용법:** `/issue-handler #123` 또는 `/issue-handler #123 --fix`
 
-### 6. CI/CD 헬퍼 (`ci-cd-helper.md`)
+#### 6. CI/CD 헬퍼 (`ci-cd-helper.md`)
 CI/CD 파이프라인 설정과 문제 해결을 도와줍니다.
 - CI/CD 설정 생성
 - 빌드 실패 분석
 - 보안 검사
 
 **사용법:** `/ci-cd-helper --setup github-actions`
+
+---
+
+### 📱 마케터용 스킬
+
+#### 1. 콘텐츠 생성기 (`content-creator.md`)
+다양한 마케팅 콘텐츠를 자동으로 생성합니다.
+- 블로그 포스트, 소셜 미디어, 이메일
+- 타겟 오디언스별 맞춤 콘텐츠
+- A/B 테스트 버전 제공
+- 해시태그 및 CTA 제안
+
+**사용법:** `/content-creator` 또는 `"Instagram 포스트 3개 만들어줘"`
+
+#### 2. SEO 최적화 (`seo-optimizer.md`)
+콘텐츠의 SEO를 분석하고 최적화합니다.
+- 키워드 리서치 및 분석
+- 온페이지 SEO 최적화
+- 경쟁사 키워드 분석
+- 메타 태그 및 구조 개선
+
+**사용법:** `/seo-optimizer` 또는 `/seo-optimizer --keyword-research`
+
+#### 3. 소셜 미디어 매니저 (`social-media-manager.md`)
+소셜 미디어 콘텐츠 기획 및 일정 관리를 도와줍니다.
+- 월간/주간 콘텐츠 캘린더 생성
+- 플랫폼별 최적화 (Instagram, LinkedIn, Twitter, Facebook 등)
+- 해시태그 전략
+- 최적 포스팅 시간 추천
+
+**사용법:** `/social-media-manager` 또는 `"11월 콘텐츠 캘린더 만들어줘"`
+
+#### 4. 마케팅 분석 (`marketing-analytics.md`)
+마케팅 데이터를 분석하고 인사이트 기반 리포트를 생성합니다.
+- 트래픽 및 전환율 분석
+- 채널별 성과 분석
+- ROI 및 ROAS 계산
+- 액션 아이템 제시
+
+**사용법:** `/marketing-analytics` 또는 `"지난 달 성과 리포트 작성해줘"`
+
+#### 5. 카피라이터 (`copywriter.md`)
+효과적인 마케팅 카피를 작성합니다.
+- 광고 헤드라인, CTA, 제품 설명
+- AIDA, PAS 등 카피라이팅 프레임워크
+- 설득 기법 적용
+- A/B 테스트 버전 제공
+
+**사용법:** `/copywriter` 또는 `"랜딩 페이지 카피 작성해줘"`
+
+#### 6. 경쟁사 분석 (`competitor-analyzer.md`)
+경쟁사를 분석하여 마케팅 전략 수립을 지원합니다.
+- 다차원 경쟁사 분석
+- SWOT 분석
+- 벤치마킹 및 비교
+- 차별화 전략 제안
+
+**사용법:** `/competitor-analyzer` 또는 `"주요 경쟁사 분석해줘"`
 
 ## 🚀 시작하기
 
@@ -159,7 +219,9 @@ Bash 명령어나 다른 도구를 스킬에 통합:
 
 ## 📋 워크플로우 예시
 
-### 배포 전 체크리스트
+### 🧑‍💻 개발 워크플로우
+
+#### 배포 전 체크리스트
 
 ```bash
 # 1. 코드 리뷰
@@ -178,7 +240,7 @@ Bash 명령어나 다른 도구를 스킬에 통합:
 /ci-cd-helper --analyze-failure
 ```
 
-### 버그 수정 워크플로우
+#### 버그 수정 워크플로우
 
 ```bash
 # 1. 이슈 분석
@@ -189,6 +251,59 @@ Bash 명령어나 다른 도구를 스킬에 통합:
 
 # 3. 테스트 실행
 /test-runner --fix
+```
+
+### 📱 마케팅 워크플로우
+
+#### 콘텐츠 마케팅 캠페인
+
+```bash
+# 1. 경쟁사 분석
+/competitor-analyzer
+
+# 2. SEO 키워드 리서치
+/seo-optimizer --keyword-research
+
+# 3. 블로그 콘텐츠 생성
+/content-creator
+
+# 4. SEO 최적화
+/seo-optimizer
+
+# 5. 소셜 미디어 포스트 제작
+/social-media-manager
+```
+
+#### 제품 런칭 캠페인
+
+```bash
+# 1. 랜딩 페이지 카피 작성
+/copywriter
+
+# 2. 소셜 미디어 캘린더 생성
+/social-media-manager
+
+# 3. 이메일 마케팅 콘텐츠
+/content-creator
+
+# 4. 성과 분석 대시보드 준비
+/marketing-analytics
+```
+
+#### 월간 마케팅 리뷰
+
+```bash
+# 1. 성과 리포트 생성
+/marketing-analytics
+
+# 2. 경쟁사 벤치마킹
+/competitor-analyzer --benchmark
+
+# 3. SEO 순위 체크
+/seo-optimizer
+
+# 4. 다음 달 콘텐츠 계획
+/social-media-manager
 ```
 
 ## 🤝 기여하기
